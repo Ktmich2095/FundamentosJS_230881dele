@@ -336,6 +336,7 @@ let seriesTrending2 = [
 //usando forEach para recorrer cada serie y calcular la calificacion
 seriesTrending2.forEach((serie,index)=>{
   let calificacion = (serie.reproducciones / serie.viewers).toFixed(2);
+  
   //calcula la calificacion y la redondeamos a 2 decimales
   console.log(`Serie ${index + 1}:`)
   console.log(`Nombre: ${serie.nombre}`)
@@ -349,7 +350,7 @@ seriesTrending2.forEach((serie,index)=>{
 //Usando filter para filtrar y map para transformar la informacion
 //Lista de series que queremos verificar
 
-let seriesDeseadas=["love Alarm","True beauty","El goblin"];
+let seriesDeseadas=["Love Alarm","True beauty","El goblin"];
 
 //usando map e includes para filtrar y obtener los nombres de series con 3 temporadas
 let seriesConTresTemporadas = seriesTrending2
