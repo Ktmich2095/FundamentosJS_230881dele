@@ -161,4 +161,26 @@ console.log(`El usuario: ${nombreUsuario} esta intentando logearse con una contr
 generoUsuario="F";
 estatusRelacionSentimental=null;
 console.log(`El usuario: ${nombreUsuario}, se ha logeado exitosamente, al tener acceso a su información de perfil podemos deducir que es del
-    género ${generoUsuario} y que su estatus de relación es ${estatusRelacionSentimental} y su última publicación la realizó el: ${fechaUltimoPost}`)        
+    género ${generoUsuario} y que su estatus de relación es ${estatusRelacionSentimental} y su última publicación la realizó el: ${fechaUltimoPost}`);
+//Comparando NULL vs UNDEFINED
+//Si bien UNDEFINED y NULL tienen el mismo valor, no tienen el mismo tipo de dato
+//EQUIDAD mismo valor, diferente tipo. IDENTIDAD mismo valor, mismo tipo de dato
+//operación ternaria
+console.log("Comparación de la equidad entre Undefined y Null:")
+console.log(
+    (fechaUltimoPost==estatusRelacionSentimental)?
+    "Ambas variables tienen el mismo valor":
+    "Ambas no tienen el mismo valor");
+console.log(
+    (fechaUltimoPost===estatusRelacionSentimental)?
+"Ambas variables tienen el mismo valor y el mismo tipo de dato":
+"Ambas tienen el mismo valor, pero NO el mismo tipo de dato"
+);
+//8. FUNCTION
+console.warn("--- Tipo de Dato FUNCTION (Función)")
+//Declaramos una función que nos permite recibir un parametro en este caso el nombre de la persona
+//a saludar, y le envíamos un saludo, esta funcióon la asinamos a una constante
+const saludar = function(nombre){return `Hola, ${nombre}`}
+console.log(saludar('Michelle'))
+//Y que tipo de dato tiene esta constante
+console.log(`El tipo de dato de la constante saludar es: ${typeof saludar}`)
