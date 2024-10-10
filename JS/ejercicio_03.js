@@ -312,7 +312,6 @@ console.log("Imprimimos la estructura y valores del Objeto PEDIDO")
 console.table(Pedido)
 
 //Suponiendo que el usuario ya realizó el pago el pedido se convertira en una VENTA que requiere información de ambos objetos
-
 const Venta = Object.assign(Producto, Pedido);
 console.log("Consultamos este nuevo objeto VENTA")
 console.table(Venta);
