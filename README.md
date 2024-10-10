@@ -12,8 +12,9 @@ Previo a inclinar el desarrollo de software para web usando el framework de Node
 |2.|Inicialización del proyecto de fundamentos de js|5|Finalizada|
 |3.|Declaración de Variables (Undefinied/Boolean/Number)|10|Finalizada|
 |4.|Declaración de Variables (String/BigInt/Symboll/null)|6|Finalizada|
-|5.|Introducción a Objectos |19|Activa|
-|6.|Repaso de arreglos (Arrays)|Pendiente|Activa|
+|5.|Introducción a Objectos |19|Finalizada|
+|6.|Repaso de arreglos (Arrays)|18|Finalizada|
+|7.|Sentencias de control y ciclos|16|Activa|
 
 
 ### Autor 
