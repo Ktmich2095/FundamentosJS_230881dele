@@ -11,8 +11,10 @@ Previo a inclinar el desarrollo de software para web usando el framework de Node
 |1.|Metodologia de evaluación|1|Finalizada|
 |2.|Inicialización del proyecto de fundamentos de js|5|Finalizada|
 |3.|Declaración de Variables (Undefinied/Boolean/Number)|10|Finalizada|
-|4.|Declaración de Variables (String/BigInt/Symboll/null)|15|Activa|
-|5.|Introducción a Objectos |Activa|
+|4.|Declaración de Variables (String/BigInt/Symboll/null)|6|Finalizada|
+|5.|Introducción a Objectos |19|Activa|
+|6.|Repaso de arreglos (Arrays)|Pendiente|Activa|
+
 
 ### Autor 
 Michelle Castro Otero
