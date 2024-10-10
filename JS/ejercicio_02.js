@@ -1,3 +1,5 @@
+
+
 let miCliente;
 console.log("El cliente es: ", miCliente)
 console.log("El tipo de dato de la variable cliente es: ",typeof(miCliente));
@@ -57,7 +59,6 @@ espaciales donde se requiere de una excelente precisión numérica
 console.warn("--- Tipo de Datos - BIGINT (Número Amplio)")
 const numeroGrande = 1234567890
 const numeroGrandeDos = 1234567890123456790
-const numeroGrandeTres = 1234567890123456789001234567890
 let numeroGrandeTres = 1234567890123456789001234567890
 let numeroGrandeCuatro = 12345678901234567890012345678901234567890 
 console.log(`El primer experimento de un número grande es: ${numeroGrande}, que si es soportado por 
