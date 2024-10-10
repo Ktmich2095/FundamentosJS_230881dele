@@ -262,7 +262,6 @@ while(j<dias.length){
         }
 
         //imprimir el nombre del dia y mensaje
-
     if(!finDeSemana){
         console.log(`Día: ${j} ${dias[j]}`)
         console.log(`Mensaje del día ${mensaje}`)
@@ -336,7 +335,7 @@ let seriesTrending2 = [
 //usando forEach para recorrer cada serie y calcular la calificacion
 seriesTrending2.forEach((serie,index)=>{
   let calificacion = (serie.reproducciones / serie.viewers).toFixed(2);
-  
+
   //calcula la calificacion y la redondeamos a 2 decimales
   console.log(`Serie ${index + 1}:`)
   console.log(`Nombre: ${serie.nombre}`)
