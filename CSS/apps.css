@@ -1,0 +1,169 @@
+/* Reset general */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+    background: #0d0d0d; /* Fondo oscuro profundo */
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    perspective: 1500px;
+    text-align: center;
+}
+
+/* Fondo con partículas dinámicas */
+body::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300%;
+    height: 300%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.08), rgba(0, 0, 0, 0));
+    transform: translate(-50%, -50%) rotate(45deg);
+    animation: rotateBackground 20s linear infinite;
+    pointer-events: none;
+}
+
+@keyframes rotateBackground {
+    from { transform: translate(-50%, -50%) rotate(0deg); }
+    to { transform: translate(-50%, -50%) rotate(360deg); }
+}
+
+/* Contenedor principal centrado con estilo Glassmorphism oscuro */
+main {
+    width: 90%;
+    max-width: 1000px;
+    padding: 40px;
+    background: rgba(25, 25, 25, 0.8); /* Fondo semi-translúcido oscuro */
+    border-radius: 30px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.9), inset 0 0 10px rgba(255, 255, 255, 0.05);
+    transform: rotateY(0deg) translateZ(50px);
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+    position: relative;
+    z-index: 1;
+}
+
+main:hover {
+    transform: rotateY(0deg) translateZ(60px);
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 1), inset 0 0 15px rgba(255, 255, 255, 0.1);
+}
+
+/* Animación de entrada */
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(40px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+/* Título con degradado de neón */
+header h2 {
+    font-size: 4.5em;
+    margin-bottom: 30px;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+    background: linear-gradient(90deg, #12c2e9, #c471ed, #f64f59);
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: colorShift 5s infinite;
+    text-shadow: 8px 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+@keyframes colorShift {
+    0%, 100% { background-position: 0% 100%; }
+    50% { background-position: 100% 0%; }
+}
+
+/* Párrafos con sombreado suave */
+main p {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    color: rgba(255, 255, 255, 0.9);
+    position: relative;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    line-height: 1.6;
+}
+
+main p strong {
+    color: #f39c12;
+}
+
+/* Efecto hover en párrafos */
+main p::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    z-index: -1;
+    transition: width 0.5s ease;
+}
+
+main p:hover::before {
+    width: 100%;
+}
+
+/* Botón 3D brillante */
+a {
+    display: inline-block;
+    padding: 15px 40px;
+    background: linear-gradient(135deg, #12c2e9, #c471ed, #f64f59);
+    border: none;
+    border-radius: 50px;
+    color: white;
+    font-size: 1.4em;
+    font-weight: bold;
+    text-decoration: none;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.7), inset 2px 2px 8px rgba(255, 255, 255, 0.1);
+    transition: all 0.4s ease, transform 0.3s ease;
+    position: relative;
+    z-index: 1;
+}
+
+a:hover {
+    background: linear-gradient(135deg, #0f9ed8, #bb44cc, #f53d44);
+    transform: translateY(-8px);
+    box-shadow: 15px 15px 45px rgba(0, 0, 0, 0.9), inset 5px 5px 10px rgba(255, 255, 255, 0.2);
+}
+
+/* Pie de página */
+footer {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 1.1em;
+}
+
+/* Ajustes responsivos */
+@media (max-width: 768px) {
+    main {
+        padding: 30px;
+    }
+
+    header h2 {
+        font-size: 3em;
+    }
+
+    a {
+        padding: 12px 30px;
+        font-size: 1.2em;
+    }
+
+    p {
+        font-size: 1.3em;
+    }
+}
