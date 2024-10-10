@@ -14,6 +14,7 @@ Previo a inclinar el desarrollo de software para web usando el framework de Node
 |4.|Declaración de Variables (String/BigInt/Symboll/null)|6|Finalizada|
 |5.|Introducción a Objectos |19|Finalizada|
 |6.|Repaso de arreglos (Arrays)|18|Finalizada|
+|7.|Sentencias de control y ciclos|16|Activa|
 
 
 ### Autor 

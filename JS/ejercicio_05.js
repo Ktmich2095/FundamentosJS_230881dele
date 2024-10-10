@@ -261,6 +261,8 @@ while(j<dias.length){
                 break;
         }
 
+
+        
         //imprimir el nombre del dia y mensaje
     if(!finDeSemana){
         console.log(`Día: ${j} ${dias[j]}`)
